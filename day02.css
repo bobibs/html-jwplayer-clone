@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Overpass&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+:root {
+	--font-size: 16px;
+	--background-color: #0c1328;
+	--button-color: #eb0e5b;
+	--text-color: #fff;
+}
+
+body {
+	font-family: 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header container start */
+.header-container {
+	font-size: var(--font-size);
+	color: var(--text-color);
+	background-color: var(--background-color);
+	padding: 20px 40px 0 40px;
+	display: flex;
+	height: 10vh;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.brand-container {
+	margin-right: 20px;
+}
+
+.brand-container img {
+	height: 40px;
+	width: 110px;
+}
+
+.menu-container {
+	padding-top: 10px;
+	display: flex;
+}
+
+.menu-container .menu {
+	margin-right: 20px;
+	transition: 500ms;
+	cursor: pointer;
+}
+
+.menu-container .menu:hover i {
+	color: var(--button-color);
+}
+
+.menu-container .menu span {
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+/* Products section start */
+
+.menu-container .menu-products:hover .products-menu {
+	display: flex;
+}
+
+.products-menu {
+	margin-top: 20px;
+	position: absolute;
+	display: none;
+}
+
+.products-menu .menu-left,
+.products-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.products-menu .menu-left {
+	background-color: #eeeeee;
+	width: 60vh;
+	height: 60vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.products-menu .menu-left > div {
+	width: 50%;
+	color: #555;
+	padding-top: 15px;
+}
+
+.products-menu .menu-left > div span {
+	color: var(--button-color);
+	font-size: 15px;
+	margin-right: 5px;
+	margin-left: -2px;
+}
+
+.products-menu .menu-left > div ul,
+.products-menu .menu-right ul {
+	padding-top: 10px;
+}
+
+.products-menu .menu-left > div ul li,
+.products-menu .menu-right ul li {
+	padding: 10px 0;
+}
+
+.products-menu .menu-right {
+	background-color: #e5e5e5;
+	width: 30vh;
+	color: #555;
+	padding-top: 35px;
+}
+
+.products-menu .menu-left > div ul li:hover,
+.products-menu .menu-right ul li:hover {
+	color: #111;
+}
+
+/* Products section end */
+
+/* Solutions section start */
+.menu-container .menu-solutions:hover .solutions-menu {
+	display: flex;
+}
+
+.solutions-menu {
+	position: absolute;
+	margin-top: 20px;
+	display: none;
+	color: #555;
+}
+
+.solutions-menu .menu-left {
+	background-color: #eeeeee;
+	width: 20vh;
+	height: 35vh;
+}
+
+.solutions-menu .menu-right {
+	width: 40vh;
+	background-color: #e5e5e5;
+}
+
+.solutions-menu .menu-left,
+.solutions-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.solutions-menu .menu-left ul,
+.solutions-menu .menu-right ul {
+	padding-top: 5px;
+}
+
+.solutions-menu .menu-left ul li {
+	padding: 10px 0;
+}
+
+.solutions-menu .menu-right p {
+	padding: 15px 0;
+}
+
+.solutions-menu .menu-left ul li:hover,
+.solutions-menu .menu-right ul li:hover {
+	color: #111;
+}
+/* Solutions section end */
+
+/* Developers section start */
+.menu-container .menu-developers:hover .developers-menu {
+	display: flex;
+}
+
+.developers-menu {
+	position: absolute;
+	margin-top: 20px;
+	color: #555;
+	display: none;
+}
+
+.developers-menu .menu-left {
+	background-color: #eeeeee;
+	width: 20vh;
+	height: 35vh;
+}
+
+.developers-menu .menu-right {
+	width: 20vh;
+	background-color: #e5e5e5;
+}
+
+.developers-menu .menu-left,
+.developers-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.developers-menu .menu-left ul {
+	padding-top: 5px;
+}
+
+.developers-menu .menu-right p {
+	padding-top: 14px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.developers-menu .menu-left ul li {
+	padding: 10px 0;
+}
+
+.developers-menu .menu-right ul li {
+	margin-top: 14px;
+	padding-top: 5px;
+}
+
+.developers-menu .menu-left ul li:hover,
+.developers-menu .menu-right ul li:hover {
+	color: #111;
+}
+/* Developers section end */
+
+/* Company section start */
+.menu-container .menu-company:hover .company-menu {
+	display: flex;
+}
+
+.company-menu {
+	position: absolute;
+	margin-top: 20px;
+	display: none;
+	color: #555;
+}
+
+.company-menu .menu-left {
+	background-color: #eeeeee;
+	width: 20vh;
+	height: 35vh;
+}
+
+.company-menu .menu-right {
+	width: 40vh;
+	background-color: #e5e5e5;
+}
+
+.company-menu .menu-left,
+.company-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.company-menu .menu-left ul,
+.company-menu .menu-right ul {
+	padding-top: 5px;
+}
+
+.company-menu .menu-left ul li {
+	padding: 10px 0;
+}
+
+.company-menu .menu-right p {
+	padding: 15px 0;
+}
+
+.company-menu .menu-left ul li:hover,
+.company-menu .menu-right ul li:hover {
+	color: #111;
+}
+/* Company section end */
+
+/* Resources section start */
+.menu-container .menu-resources:hover .resources-menu {
+	display: flex;
+}
+
+.resources-menu {
+	position: absolute;
+	margin-top: 20px;
+	display: none;
+	color: #555;
+}
+
+.resources-menu .menu-left {
+	background-color: #eeeeee;
+	width: 20vh;
+	height: 35vh;
+}
+
+.resources-menu .menu-right {
+	width: 40vh;
+	background-color: #e5e5e5;
+}
+
+.resources-menu .menu-left,
+.resources-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.resources-menu .menu-left ul,
+.resources-menu .menu-right ul {
+	padding-top: 5px;
+}
+
+.resources-menu .menu-left ul li {
+	padding: 10px 0;
+}
+
+.resources-menu .menu-right p {
+	padding: 15px 0;
+}
+
+.resources-menu .menu-left ul li:hover,
+.resources-menu .menu-right ul li:hover {
+	color: #111;
+}
+/* Resources section end */
+
+.bars-container {
+	display: none;
+}
+
+.login-container {
+	padding-top: 13px;
+	margin-left: auto;
+	display: flex;
+}
+
+.login-container .sign-in {
+	margin-right: 20px;
+	transition: 500ms;
+}
+
+.login-container .sign-in:hover {
+	color: var(--button-color);
+	cursor: pointer;
+}
+
+.login-container .get-started {
+	border: 1px solid var(--button-color);
+	border-radius: 25px;
+	width: 110px;
+	height: 30px;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-left: 20px;
+	position: relative;
+	bottom: 10px;
+	transition: 500ms;
+}
+
+.login-container .get-started span {
+	font-size: 10px;
+	margin-left: 5px;
+	color: var(--button-color);
+	position: relative;
+	bottom: 1px;
+}
+
+.login-container .get-started:hover {
+	color: var(--button-color);
+	border-color: var(--text-color);
+	cursor: pointer;
+}
+
+.login-container .get-started:hover span {
+	color: var(--text-color);
+}
+
+/* Header container end */
+
+/* Section 1 start */
+.jumbotron1-container {
+	height: 100vh;
+	background-color: var(--background-color);
+	color: #fff;
+	padding-top: 175px;
+	font-family: 'Overpass', 'Trebuchet MS', 'Lucida Sans Unicode',
+		'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+}
+
+.jumbotron1-container .jumbotron1-text-big {
+	font-size: 55px;
+	font-weight: 900;
+}
+
+.jumbotron1-container .jumbotron1-text-small {
+	font-size: 20px;
+	font-weight: 200;
+	margin: 20px 100px 0 100px;
+}
+
+.jumbotron1-container .jumbotron1-button {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.jumbotron1-container .jumbotron1-button .button-container {
+	margin-top: 20px;
+	width: 140px;
+	background-color: var(--button-color);
+	border-radius: 25px;
+	font-size: 18px;
+	padding: 17px 20px 17px 25px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 1px;
+	transition: 500ms;
+}
+
+.jumbotron1-container .jumbotron1-button .button-container:hover {
+	cursor: pointer;
+	background-color: var(--text-color);
+	color: var(--button-color);
+}
+
+/* Section 1 end */
+
+/* Responsive start */
+
+/* Tablet start */
+@media only screen and (max-width: 1200px) {
+	.menu-container {
+		display: none;
+	}
+
+	.bars-container {
+		display: block;
+		margin-left: auto;
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.bars-container:hover {
+		cursor: pointer;
+	}
+
+	.login-container {
+		display: none;
+	}
+}
+/* Tablet end */
+
+/* Responsive end */
